@@ -14,7 +14,24 @@
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
     <!--Icons--> <!--defer - transfere JS pra HTML-->
     <script src="https://kit.fontawesome.com/dcd2f5fc2e.js" crossorigin="anonymous" defer></script>
+      
+    <script>
+        let istoggled = false;
+        function evento(){
+            const pbi = document.getElementById("pbi");
 
+            if(!istoggled){
+                pbi.style.width = "1200px";
+                pbi.style.height = "801px";
+                istoggled = true;
+            }
+            else{
+                pbi.style.width = "";
+                pbi.style.height = "";
+                istoggled = false;
+            }
+        }
+    </script>
     <title>Portfólio</title>
    
 </head>
@@ -48,14 +65,16 @@
                 </ul>
                 <br>
                 <span>Projetos no Github</span>
-                <li><span>https://eduardotocci.github.io/Desafio-Cordel/</span></li>
-                <li><span>eduardotocci.github.io/Projeto-PinGames/</span></li>
-                <li><span>eduardotocci.github.io/Projeto-Android/</span></li>
+                <ul>
+                    <li><span>https://eduardotocci.github.io/Desafio-Cordel/</span></li>
+                    <li><span>eduardotocci.github.io/Projeto-PinGames/</span></li>
+                    <li><span>eduardotocci.github.io/Projeto-Android/</span></li>
+                </ul>
               </article> 
 
               <div class="img-container">
-              <span>Projetos Power Bi</span>
-             <img src="img/image.png" alt="Pbi de Vendas">
+              <h2>Projetos Power Bi</h2>
+             <img src="img/image.png" alt="Pbi de Vendas" id="pbi" onclick="evento()">
             </div>
             </article> 
 

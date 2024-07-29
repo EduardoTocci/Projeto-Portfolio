@@ -12,6 +12,8 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+
+      
     <!--Icons--> <!--defer - transfere JS pra HTML-->
     <script src="https://kit.fontawesome.com/dcd2f5fc2e.js" crossorigin="anonymous" defer></script>
       
@@ -40,7 +42,7 @@
         <h1> Dev.Eduardo</h1>
         <nav>
             <a href="https://www.instagram.com/eduardo_tocci/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram" ></i>
             </a>
             <a href="https://github.com/EduardoTocci" target="_blank">
                 <i class="fa-brands fa-github"></i>
@@ -49,10 +51,34 @@
     </header>
 
     <main>
-        <section class="main-content">
+            <section class="main-content">
+
+              <figure>
+
+                <img src="img/WhatsApp Image 2023-08-28 at 19.08.34.jpeg" alt="ME" class="me">
+                <legend>Eduardo Asevedo Lago Tocci</legend>
+                 
+                <nav id="nav">
+                  
+                  <a href="https://www.instagram.com/eduardo_tocci/" target="_blank">
+                      <i class="fa-brands fa-instagram" id="social-media"></i>
+                  </a>
+
+                  <a href="https://github.com/EduardoTocci" target="_blank">
+                      <i class="fa-brands fa-github" id="social-media"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/eduardo-tocci-b6a447268/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </nav>
+
+              </figure>
+
+            
               <article class="text">
                 <h2>🙋🏽‍♂️ Sobre mim</h2> 
-                <p>Meu nome é Eduardo Asevedo Lago Tocci, tenho 18 anos e sou de Brasília-DF. Sou estudante e estou cursando Análise e Desenvolvimento de Sistema, além disso , sou apaixonado em programação 😎</p>
+                <p>Meu nome é Eduardo Asevedo Lago Tocci, tenho 19 anos e sou de Brasília-DF. Sou estudante e estou cursando Análise e Desenvolvimento de Sistema, além disso , sou apaixonado em programação 😎</p>
                 <ul>
                     
                     <li><span>3° semestre em Análise e Desenvolvimento de Sistema (IESB)</span></li>
@@ -63,20 +89,88 @@
                     <li><span>Aprendendo HTML , CSS , SQL , Python , JS , Power Bi.</span></li>
 
                 </ul>
+
                 <br>
-                <span>Projetos no Github</span>
-                <ul>
-                    <li><span>https://eduardotocci.github.io/Desafio-Cordel/</span></li>
-                    <li><span>eduardotocci.github.io/Projeto-PinGames/</span></li>
-                    <li><span>eduardotocci.github.io/Projeto-Android/</span></li>
-                </ul>
+                   
+                <!-- Projetos-->
+                <div class="Projects">
+
+                  <h2>Projetos no Github</h2>
+
+                    <div class="pingames" id="container-project">
+                        <img src="./img/IMG projeto Pin Games.PNG" alt="Demonstração do Projeto" class="Img-Project-Pingames" id="img-project">
+                        
+                        <div class="container-text">
+                            
+                           <h2>PinGames</h2> 
+                            <p>PinGames é um site no formato de blog sobre notícias do mundo dos jogos </p>
+                            <div class="info">
+                                     <legend>Não Responsivo </legend>
+                                     <legend>Feito em equipe</legend>
+                            </div>
+
+                             <a href="https://eduardotocci.github.io/Projeto-PinGames/" target="_blank"><button class="button-project"> Ver Mais </button></a>
+               
+                        </div>
+                        
+                         
+                    </div>
+                    
+
+                    <div class="cordelmoderno" id="container-project" >
+                        <img src="./img/img portfolio.PNG" alt="Demonstração do Projeto" class="Img-Project-Cordel" id="img-project">
+
+                        <div class="container-text">
+                            <h2>Cordel Moderno</h2>
+                         <p>Site responsivo sobre o Cordel Moderno feito por Milton Duarte</p>
+
+                            <a href="https://eduardotocci.github.io/Desafio-Cordel/" target="_blank"><button class="button-project2"> Ver Mais </button></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="android" id="container-project">
+                      <img src="./img/img porjeto android.PNG" alt="Demonstração do Projeto" class="Project-Android" id="img-project">
+                      
+                       <div class="container-text">
+                         <h2>Android</h2>
+ 
+                         <p>Site responsivo sobre a história do sistema operacional Android</p>
+
+                         <a href="https://eduardotocci.github.io/Projeto-Android/" target="_blank"><button class="button-project2"> Ver Mais </button></a>
+
+                        </div>
+                      <!-- </div> -->
+                   </div>
+                
+                    
+                </div>
+                <br>
+                <div class="img-container">
+                    <h2>Projetos Power Bi</h2>
+                   <img src="img/image (1).png" alt="Pbi de Vendas" id="pbi" onclick="evento()">
+                   </div>
               </article> 
 
-              <div class="img-container">
-              <h2>Projetos Power Bi</h2>
-             <img src="img/image (1).png" alt="Pbi de Vendas" id="pbi" onclick="evento()">
+             
+
+
+             <h2>Experiência Profissional</h2>
+
+             <div class="android" id="container-job">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Tribunal_de_contas_da_uniao_sede.jpg" alt="Imagem TCU" class="Project-Android" id="img-job">
+               
+                <div class="container-text">
+                  <h2>Tribunal de Contas da União</h2>
+
+                  <p>Função: Criação de Dashboards e painéis usando Power Bi para análise de dados </p>
+                  <p>Duração de atuação: 29/10/2023 - Atualmente </p>
+                  
+
+                 </div>
+               
             </div>
-            </article> 
 
               <aside class="tech">
                <h2>👨🏽‍💻 Tecnologia</h2>
@@ -105,7 +199,7 @@
                 </div>
 
                 <div class="card">
-                    <abbr title="PBI"><img src="https://e7.pngegg.com/pngimages/327/384/png-clipart-power-bi-business-intelligence-microsoft-azure-microsoft-dynamics-cloud-computing-cloud-computing-angle-text-thumbnail.png" alt="Logo Power Bi"></abbr>
+                    <abbr title="PBI"><img src="https://banner2.cleanpng.com/20181110/vfu/kisspng-power-bi-business-intelligence-microsoft-azure-mic-office-365-d-nieuwe-cloud-omgeving-dynamics-on-5be7b364c21ac6.3427992715419113967951.jpg" alt="Logo Power Bi"></abbr>
                 </div>
                   
               </aside>
@@ -113,10 +207,7 @@
             
             </section>
 
-            <figure>
-                <img src="img/WhatsApp Image 2023-08-28 at 19.08.34.jpeg" alt="ME" class="me">
-                <legend>Eduardo Asevedo Lago Tocci</legend>
-            </figure>
+          
                     
           
     </main>

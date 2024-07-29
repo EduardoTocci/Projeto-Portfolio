@@ -1,16 +1,15 @@
 main{
    padding: 5px;
    /* Separa as partes do texto , da foto e das tecnologias*/
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+   
  }
  .main-content{
     display: flex;
     flex-direction: column;
     font-size: 2.5em;
     padding: 70px;
-    margin-right:  90px 
+    padding-left: 100px;
+    
  }
  main , .main-content , h2{
     margin-bottom: 3%;
@@ -19,44 +18,29 @@ main{
  main , .main-content , .text{
     margin-bottom: 5%;
  }
-   
+ .titulo{
+   display: flex;
+ }
+ hr{
+   height: 40px;
+ }
+ .titulo > h1{
+  margin-bottom: 1.5%;
+  color: white;
+  text-indent: 10px;
+  font-size: 26px;
+ }
   .text > p , li{
     /*está mantendo o texto não muito comprido */
-    width: 75% ;
-    font-weight: 300;
-    line-height: 1.6em;
+    width: 80% ;
+    text-align: justify;
+    text-indent: 30px;
+    font-weight: 100;
+    line-height: 1.8em;
     margin-left: 0.9em;
     margin-right: 0.9em;
  }
  
-  /* ------ Cards ------ */
-   .tech > .cards-container{
-   display: flex;
-  }
- .card{
-   width: 80px;
-   height: 70px;
-   padding: 10px;
-   background-color: rgba(255, 255, 255, 0.904);
-   border-radius: 8px;
-   margin: 10px;
-   text-align: center;
-   cursor: pointer;
-   
-  }
-  .card:hover{
-   box-shadow: 0px 0px 8px 0px #00e0ff;
-   transition: 0.2s ease-in-out;
-  }
-  
-  img{
-   height: 50px;
-  
-  }
-  span > p{
-   font-size: small;
-   
-  }
    /* --- Minha Foto --- */
   figure{
     margin: auto;
@@ -66,7 +50,7 @@ main{
    
     height: 300px;
     border-radius: 300px;
-    margin-right:  90px ;
+    
     margin-bottom: 9%;
     border: 1px solid #00e0ff;
     transition: 0.2 ease-in-out;
@@ -86,14 +70,10 @@ main{
    li{
      margin: 5px;
    }
-   /* .img-container{
-     width: 300px;
-     height: 200px;
-     overflow: hidden;
-     border: 2px solid #000;
-  } */
+   
   
   .img-container img{
+     
      width: 30%;
      height: 50%;
      -webkit-transition: -webkit-transform .5s ease;
@@ -101,14 +81,16 @@ main{
   }
   
   .img-container:hover img{
-     
+     cursor: pointer;
      transform: scale(1.1);
   }
  
    /* Projects Container */
+   .Projects > div{
+     margin-bottom: 15px;
+    }
    
    .Projects{
-   
    display:grid;
   } 
  
@@ -120,11 +102,11 @@ main{
    border-right: solid 1px;
    border-top-right-radius: 0;
    border-bottom-right-radius: 0;
-   border-color: #00e0ff;
+   border-color: transparent;
    
   }
-  #container-project{
-    width: fit-content;
+  #container-project , #container-project2{
+   width: 1100px;
    display: grid;
    grid-template-columns: 1fr 3fr;
    color: white;
@@ -135,6 +117,7 @@ main{
    
    
   }
+  
   .container-text > h2{
    align-items: center;
    text-align: center;
@@ -198,11 +181,6 @@ main{
  }
  
  
-  .Projects > div{
-   margin: 10px;
-  }
-  
- 
  
   /* Projetcs container end */
  
@@ -228,6 +206,32 @@ main{
    margin-top: 20px;
    
  }
- aside{
+ .tech{
    margin-top: 30px;
  }
+ /* ------ Cards ------ */
+ .cards-container {
+   display: flex;
+ }
+   
+ .card{
+   width: 80px;
+   height: 70px;
+   padding: 10px;
+   background-color: rgba(255, 255, 255, 0.904);
+   border-radius: 8px;
+   margin: 10px;
+   text-align: center;
+   cursor: pointer;
+   
+  }
+  .card:hover{
+   box-shadow: 0px 0px 8px 0px #00e0ff;
+   transition: 0.2s ease-in-out;
+  }
+  
+  img{
+   height: 50px;
+  
+  }
+ 

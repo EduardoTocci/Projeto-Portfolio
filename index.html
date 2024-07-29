@@ -9,30 +9,48 @@
     <link rel="stylesheet" href="main.css">
    <link rel="stylesheet" href="responsive.css">
     <!--Fontes-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap" rel="stylesheet">
+      
 
       
     <!--Icons--> <!--defer - transfere JS pra HTML-->
     <script src="https://kit.fontawesome.com/dcd2f5fc2e.js" crossorigin="anonymous" defer></script>
       
     <script>
-        let istoggled = false;
-        function evento(){
-            const pbi = document.getElementById("pbi");
+  let istoggled = false;
 
-            if(!istoggled){
-                pbi.style.width = "1200px";
-                pbi.style.height = "801px";
-                istoggled = true;
-            }
-            else{
-                pbi.style.width = "";
-                pbi.style.height = "";
-                istoggled = false;
-            }
+function evento() {
+    const pbi = document.getElementById("pbi");
+
+    if (!istoggled) {
+        if (window.innerWidth <= 1221) {
+            pbi.style.width = "100%";
+            pbi.style.height = "100%";
+        } else {
+            pbi.style.width = "80%";
+            pbi.style.height = "20%";
         }
+        istoggled = true;
+    } else {
+        pbi.style.width = "";
+        pbi.style.height = "";
+        istoggled = false;
+    }
+}
+
+// Adiciona um ouvinte de redimensionamento de janela para ajustar a imagem conforme necessário
+window.addEventListener('resize', () => {
+    const pbi = document.getElementById("pbi");
+    if (istoggled && window.innerWidth > 1221) {
+        pbi.style.width = "1200px";
+        pbi.style.height = "800px";
+    } else if (istoggled && window.innerWidth <= 1221) {
+        pbi.style.width = "100%";
+        pbi.style.height = "100%";
+    }
+});
     </script>
     <title>Portfólio</title>
    
@@ -78,17 +96,13 @@
             
               <article class="text">
                 <h2>🙋🏽‍♂️ Sobre mim</h2> 
-                <p>Meu nome é Eduardo Asevedo Lago Tocci, tenho 19 anos e sou de Brasília-DF. Sou estudante e estou cursando Análise e Desenvolvimento de Sistema, além disso , sou apaixonado em programação 😎</p>
-                <ul>
-                    
-                    <li><span>3° semestre em Análise e Desenvolvimento de Sistema (IESB)</span></li>
-                
+                <p>
+                    Sou Eduardo Asevedo Lago Tocci, tenho 19 anos e estou no 3° semestre de Análise e Desenvolvimento de Sistemas na IESB em Brasília-DF. Gosto de desenvolver em Python, focando principalmente na análise de dados. Também gosto programar em C# por causa da criação de jogos pois desde criança sou apaixonado por jogos , e estou usando Unity para isso . Além disso, tenho habilidades em HTML, CSS, SQL, JavaScript e Power BI. 
+                </p>
+                    <br>
+                <p>Atualmente, estou estagiando no Tribunal de Contas da União (TCU), onde estou ganhando experiência prática e aplicando meus conhecimentos de análise de dados. Tenho inglês intermediário, o que me ajuda a acessar e entender materiais/recursos internacionais. Além do mais, Estou sempre disposto a aprender novas tecnologias e explorar outras áreas, além do meu foco ser em desenvolvimento de jogos e análise de dados</p>
 
-                    <li> <span>Inglês Intermediário </span></li>
-
-                    <li><span>Aprendendo HTML , CSS , SQL , Python , JS , Power Bi.</span></li>
-
-                </ul>
+              
 
                 <br>
                    
@@ -117,7 +131,7 @@
                     </div>
                     
 
-                    <div class="cordelmoderno" id="container-project" >
+                    <div class="cordelmoderno" id="container-project2" >
                         <img src="./img/img portfolio.PNG" alt="Demonstração do Projeto" class="Img-Project-Cordel" id="img-project">
 
                         <div class="container-text">
@@ -130,7 +144,7 @@
 
                     </div>
 
-                    <div class="android" id="container-project">
+                    <div class="android" id="container-project2">
                       <img src="./img/img porjeto android.PNG" alt="Demonstração do Projeto" class="Project-Android" id="img-project">
                       
                        <div class="container-text">
@@ -149,8 +163,10 @@
                 <br>
                 <div class="img-container">
                     <h2>Projetos Power Bi</h2>
-                   <img src="img/image (1).png" alt="Pbi de Vendas" id="pbi" onclick="evento()">
-                   </div>
+                    
+                    <img src="./img/image.png" alt="Pbi de Vendas" id="pbi" onclick="evento()">
+                    
+                </div>
               </article> 
 
              
@@ -191,7 +207,7 @@
 
                 <div class="card">
                     <abbr title="Python"><img src="https://th.bing.com/th/id/OIP.JwxQcMSUEL8wvz9riOUG9AHaHv?rs=1&pid=ImgDetMain" alt="Logo Python"></abbr>
-                   <!-- <small><span><p>Aprendendo </p></span></small> -->
+                   
                 </div>
 
                 <div class="card">

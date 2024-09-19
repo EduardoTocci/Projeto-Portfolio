@@ -1,49 +1,419 @@
-@media (max-width: 1200px) {
+@media screen and (max-width: 1221px) {
+    
     main{
         width: 100%;
-        flex-direction:column-reverse;
+        /* flex-direction:column-reverse;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
+        
     }
+    
     .main-content{
         width: 100%;
-        align-items: center;
+        
+        
     }
-    .tech  {
-        text-align: center;
-      
+    figure{
+        margin: auto;
+        margin-bottom: 70px;
     }
+    
+    .text  {
+        /*está mantendo o texto não muito comprido */
+        margin: auto;
+        
+        
+     }
+     .text > p{
+        margin-left: 70px;
+        align-items: c;
+        line-height: 1.8;
+        font-size: 0.9em;
+     }
+     
+     #container-project,#container-project2{
+        width: 100%;
+       display: grid;
+       grid-template-columns: 0fr 1fr;
+       color: white;
+       border: solid;
+       border-width: 1px;
+       border-radius: 10px;
+       border-color: #00e0ff;
+ 
+      }
+      .container-text > h2{
+    
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  
+  .container-text > p{
+   font-weight: 100;
+    text-align: center;
+   margin-top: 20px;
+  }
+
+  
+  
+  #container-project2 > .container-text > p{
+   font-weight: 100;
+    text-align: center;
+   margin-top: 35px;
+  }
+
+  .button-project{
+    margin-left: 13%;
+    margin-top: 15px;
+    padding: 8px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color:transparent;
+    border-color: #00e0ff;
+    border-width: 1px;
+   }
+   .button-project:hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+    
+   }
+   
+   .button-project2{
+    margin-left: 13%;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color:transparent;
+    border-color: #00e0ff;
+    border-width: 1px;
+   }
+   .button-project2:hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+   }
+    
+   .img-container img{
+    
+    width: 60%;
+    height: 70%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .img-container:hover img{
+    transform: scale(1.1);
+ }
     .tech > h2 {
         margin-top: 50px;
     }
-    .text{
-        text-align: center; 
+      
+    .Projects > div{
+        margin: 13px;
     }
-    .text > p{
+    
+   
+    
+}
+@media screen and (max-width: 946px) {
+    
+    main{
         width: 100%;
-        font-size: 0.9em;
-    }
-    .me{
-        margin: auto;
-        margin-top: 20px;
-    }
-}
-@media (max-width:700px){
-    header{
-        flex-direction: column;
+        /* flex-direction:column-reverse;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        justify-content: center; */
+        
     }
-    h1 , i {
-        margin: 5px;
+    
+    .main-content{
+        width: 100%;
+        
+        
     }
-    i{
-        font-size: 1.2em;
-    }
-    .me{
-        height: 250px;
+    figure{
         margin: auto;
-        margin-top: 20px;
+        margin-bottom: 70px;
     }
+    
+    .text  {
+        /*está mantendo o texto não muito comprido */
+        margin: auto;
+        
+     }
+     .text > p{
+        
+        margin-left: 50px;
+        line-height: 1.8;
+        font-size: 0.9em;
+     }
+     
+     #container-project,#container-project2,#container-job{
+        width: 502px;
+       display: grid;
+       grid-template-columns: 1fr;
+       color: white;
+       border: solid;
+       border-width: 1px;
+       border-radius: 10px;
+       border-color: transparent;
+       box-shadow: 0 0 4px #00e0ff;
+       margin: auto;
+       margin-bottom: 20px;
+ 
+      }
+      #img-project, #img-job{
+        height: 200px;
+        width: 502px;
+        border-radius: 10px; 
+        border-color: transparent;
+        
+       }
+
+       .info{
+        display: flex;
+        margin-left: 20%;
+        margin-top: 12px;
+
+      }
+      legend{
+        margin: 10px;
+      }
+      .container-text > h2{
+    
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  
+  .container-text > p{
+   font-weight: 100;
+    text-align: center;
+   margin-top: 10px;
+  }
+
+  
+  
+  #container-project2 > .container-text > p{
+   font-weight: 100;
+    text-align: center;
+   margin-top: 35px;
+  }
+
+  .button-project{
+    margin-left: 13%;
+    margin-bottom: 5px;
+    padding: 7px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color:transparent;
+    border-color: #00e0ff;
+    border-width: 1px;
+   }
+   .button-project:hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+    
+   }
+   
+   .button-project2{
+    margin-left: 13%;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color:transparent;
+    border-color: #00e0ff;
+    border-width: 1px;
+   }
+   .button-project2:hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+   }
+  
+   .img-container img{
+    
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+
+   #container-job > .container-text > p{
+
+    margin-bottom: 20px;
+    
+  }
+   
+    .tech > h2 {
+        margin-top: 50px;
+    }
+      
+    .Projects > div{
+        margin: 13px;
+    }
+    
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(3, 0.3fr);
+        justify-items: center;
+        
+    }
+    
 }
+
+
+
+@media screen and (max-width: 624px) {
+    main{
+        width: 100%;
+        /* flex-direction:column-reverse;
+        align-items: center;
+        justify-content: center; */
+        
+    }
+    
+    .main-content{
+        width: 100%;
+        padding: 60px;
+        
+    }
+    figure{
+        margin: auto;
+        margin-bottom: 70px;
+    }
+    
+    .text  {
+        /*está mantendo o texto não muito comprido */
+        margin: auto;
+        
+        
+     }
+     .text > p{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        line-height: 1.8;
+        font-size: 0.9em;
+     }
+     
+     #container-project,#container-project2,#container-job{
+        width: 100%;
+       display: grid;
+       grid-template-columns: 1fr;
+       color: white;
+       border: solid;
+       border-width: 1px;
+       border-radius: 10px;
+       border-color: transparent;
+       box-shadow: 0 0 4px #00e0ff;
+       margin: auto;
+       margin-bottom: 20px;
+ 
+      }
+      #img-project, #img-job{
+        height: 200px;
+        width: 100%;
+        border-radius: 10px; 
+        border-color: transparent;
+        
+       }
+
+       .info{
+        
+        margin-top: 12px;
+        
+        
+      }
+      .container-text > h2{
+    
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  
+  .container-text > p{
+   font-weight: 100;
+    text-align: center;
+   margin-top: 10px;
+  }
+
+  
+  
+  #container-project2 > .container-text > p{
+   font-weight: 100;
+    text-align: center;
+   margin-top: 35px;
+  }
+
+  .button-project{
+    margin-left: 13%;
+    margin-bottom: 5px;
+    padding: 7px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color:transparent;
+    border-color: #00e0ff;
+    border-width: 1px;
+   }
+   .button-project:hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+    
+   }
+   
+   .button-project2{
+    margin-left: 13%;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color:transparent;
+    border-color: #00e0ff;
+    border-width: 1px;
+   }
+   .button-project2:hover{
+    transform: scale(1,1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+   }
+  
+
+   #container-job > .container-text > p{
+
+    margin-bottom: 20px;
+    
+  }
+   
+    .tech > h2 {
+        margin-top: 50px;
+    }
+      
+    .Projects > div{
+        margin: 13px;
+    }
+    
+    .info{
+        margin-left: 14%;
+      }
+      legend{
+        margin: 10px;
+      }
+    
+}
+

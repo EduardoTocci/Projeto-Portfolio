@@ -1,4 +1,258 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+      
+    main{
+  padding: 5px; 
+}
+.main-content{
+   display: flex;
+   flex-direction: column;
+   font-size: 2.5em;
+   padding: 70px;
+   
+}
+main , .main-content , h2{
+   margin-bottom: 3%;
+   font-size: 1.1em;
+}
+main , .main-content , .text{
+   margin-bottom: 5%;
+}
+.titulo{
+  display: flex;
+}
+hr{
+  height: 40px;
+}
+.titulo > h1{
+  font-family: serif;
+ margin-bottom: 1.5%;
+ color: white;
+ text-indent: 10px;
+ font-size: 26px;
+}
+ .text > p , li{
+   /*está mantendo o texto não muito comprido */
+   width: 75% ;
+   text-indent: 30px;
+   font-weight: 100;
+   line-height: 1.8em;
+   margin-left: 0.9em;
+   margin-right: 0.9em;
+}
+
+ 
+ 
+ img{
+  height: 50px;
+ 
+ }
+ 
+  /* --- Minha Foto --- */
+ figure{
+   margin: auto;
+    margin-bottom: 60px;
+ }
+  .me{
+  
+   height: 300px;
+   border-radius: 300px;
+   
+   margin-bottom: 9%;
+   border: 1px solid #00e0ff;
+   transition: 0.2 ease-in-out;
+   
+  }
+  .me:hover{
+      box-shadow: 0px 0px 3px #00e0ff;
+  }
+
+  ul li  {
+    color: #00e0ff;
+    
+  }
+  ul li span{
+    color: white;
+  }
+  li{
+    margin: 5px;
+  }
+  /* .img-container{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #000;
+ } */
+ 
+ .img-container img{
+    width: 30%;
+    height: 50%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+ }
+ 
+ .img-container:hover img{
+    
+    transform: scale(1.1);
+ }
+
+  /* Projects Container */
+  
+  .Projects{
+  
+  display:grid;
+ } 
+
+ /* Imagem do projeto */
+ #img-project , #img-job{
+  height: 200px;
+  width: 350px;
+  border-radius: 10px;
+  border-right: solid 1px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-color: #00e0ff;
+  
+ }
+ #container-project{
+   width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  color: white;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #00e0ff;
+  
+  
+ }
+ .container-text > h2{
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+.container-text > p{
+ font-size: large;
+  text-align: center;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+
+.info{
+  display:grid;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 20px;
+  margin-left: 24%;
+  
+}
+.info > legend{
+  color: #DDE1DC;
+  font-family: "Montserrat" , Arial, Helvetica, sans-serif;
+  font-size:medium;
+}
+.button-project{
+ margin-left: 13%;
+ margin-top: 12px;
+ padding: 10px;
+ width: 100px;
+ border-radius: 10px;
+ color: white;
+ background-color:transparent;
+ border-color: #00e0ff;
+ border-width: 1px;
+}
+.button-project:hover{
+ transform: scale(1,1);
+ -webkit-transform: scale(1.1);
+ cursor: pointer;
+ 
+}
+
+.button-project2{
+ margin-left: 13%;
+ margin-top: 40px;
+ padding: 10px;
+ width: 100px;
+ border-radius: 10px;
+ color: white;
+ background-color:transparent;
+ border-color: #00e0ff;
+ border-width: 1px;
+}
+.button-project2:hover{
+ transform: scale(1,1);
+ -webkit-transform: scale(1.1);
+ cursor: pointer;
+}
+
+
+ .Projects > div{
+  margin: 10px;
+ }
+ 
+
+
+ /* Projetcs container end */
+
+ /* Container about my experiences/works*/
+
+ #container-job{
+   width:fit-content; /* 1227 x 202 */
+  display: grid;
+  grid-template-columns: 0fr 2.5fr;
+  color: white;
+  border: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #00e0ff;
+  
+  
+ }
+  
+ #container-job > .container-text > p{
+  text-justify: auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+aside{
+  margin-top: 30px;
+}
+/* ------ Cards ------ */
+.tech > .cards-container{
+  display: flex;
+ }
+.card{
+  width: 80px;
+  height: 70px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.904);
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  
+ }
+ .card:hover{
+  box-shadow: 0px 0px 8px 0px #00e0ff;
+  transition: 0.2s ease-in-out;
+ }
+        
+
+        
+    </style>
+</head>
+
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -19,38 +273,21 @@
     <script src="https://kit.fontawesome.com/dcd2f5fc2e.js" crossorigin="anonymous" defer></script>
       
     <script>
-  let istoggled = false;
+        let istoggled = false;
+        function evento(){
+            const pbi = document.getElementById("pbi");
 
-function evento() {
-    const pbi = document.getElementById("pbi");
-
-    if (!istoggled) {
-        if (window.innerWidth <= 1221) {
-            pbi.style.width = "100%";
-            pbi.style.height = "100%";
-        } else {
-            pbi.style.width = "80%";
-            pbi.style.height = "20%";
+            if(!istoggled){
+                pbi.style.width = "1200px";
+                pbi.style.height = "801px";
+                istoggled = true;
+            }
+            else{
+                pbi.style.width = "";
+                pbi.style.height = "";
+                istoggled = false;
+            }
         }
-        istoggled = true;
-    } else {
-        pbi.style.width = "";
-        pbi.style.height = "";
-        istoggled = false;
-    }
-}
-
-// Adiciona um ouvinte de redimensionamento de janela para ajustar a imagem conforme necessário
-window.addEventListener('resize', () => {
-    const pbi = document.getElementById("pbi");
-    if (istoggled && window.innerWidth > 1221) {
-        pbi.style.width = "1200px";
-        pbi.style.height = "800px";
-    } else if (istoggled && window.innerWidth <= 1221) {
-        pbi.style.width = "100%";
-        pbi.style.height = "100%";
-    }
-});
     </script>
     <title>Portfólio</title>
    
@@ -95,12 +332,16 @@ window.addEventListener('resize', () => {
 
             
               <article class="text">
-                <h2>🙋🏽‍♂️ Sobre mim</h2> 
+
+                <div class="titulo">
+                    <hr> <h1>🙋🏽‍♂️ Sobre mim </h1>
+                </div>
+
                 <p>
                     Sou Eduardo Asevedo Lago Tocci, tenho 19 anos e estou no 3° semestre de Análise e Desenvolvimento de Sistemas na IESB em Brasília-DF. Gosto de desenvolver em Python, focando principalmente na análise de dados. Também gosto programar em C# por causa da criação de jogos pois desde criança sou apaixonado por jogos , e estou usando Unity para isso . Além disso, tenho habilidades em HTML, CSS, SQL, JavaScript e Power BI. 
                 </p>
                     <br>
-                <p>Atualmente, estou estagiando no Tribunal de Contas da União (TCU), onde estou ganhando experiência prática e aplicando meus conhecimentos de análise de dados. Tenho inglês intermediário, o que me ajuda a acessar e entender materiais/recursos internacionais. Além do mais, Estou sempre disposto a aprender novas tecnologias e explorar outras áreas, além do meu foco ser em desenvolvimento de jogos e análise de dados</p>
+                <p> Atualmente, estou estagiando no Tribunal de Contas da União (TCU), onde estou ganhando experiência prática e aplicando meus conhecimentos de análise de dados. Tenho inglês intermediário, o que me ajuda a acessar e entender materiais/recursos internacionais. Além do mais, Estou sempre disposto a aprender novas tecnologias e explorar outras áreas, além do meu foco ser em desenvolvimento de jogos e análise de dados</p>
 
               
 
@@ -109,7 +350,9 @@ window.addEventListener('resize', () => {
                 <!-- Projetos-->
                 <div class="Projects">
 
-                  <h2>Projetos no Github</h2>
+                    <div class="titulo">
+                        <hr> <h1>Projetos no Github </h1>
+                    </div>
 
                     <div class="pingames" id="container-project">
                         <img src="./img/IMG projeto Pin Games.PNG" alt="Demonstração do Projeto" class="Img-Project-Pingames" id="img-project">
@@ -131,7 +374,7 @@ window.addEventListener('resize', () => {
                     </div>
                     
 
-                    <div class="cordelmoderno" id="container-project2" >
+                    <div class="cordelmoderno" id="container-project" >
                         <img src="./img/img portfolio.PNG" alt="Demonstração do Projeto" class="Img-Project-Cordel" id="img-project">
 
                         <div class="container-text">
@@ -144,7 +387,7 @@ window.addEventListener('resize', () => {
 
                     </div>
 
-                    <div class="android" id="container-project2">
+                    <div class="android" id="container-project">
                       <img src="./img/img porjeto android.PNG" alt="Demonstração do Projeto" class="Project-Android" id="img-project">
                       
                        <div class="container-text">
@@ -163,16 +406,16 @@ window.addEventListener('resize', () => {
                 <br>
                 <div class="img-container">
                     <h2>Projetos Power Bi</h2>
-                    
-                    <img src="./img/dash.PNG" alt="Pbi de Vendas" id="pbi" onclick="evento()">
-                    
-                </div>
+                   <img src="img/image (1).png" alt="Pbi de Vendas" id="pbi" onclick="evento()">
+                   </div>
               </article> 
 
              
 
 
-             <h2>Experiência Profissional</h2>
+              <div class="titulo">
+                <hr> <h1>Experiência Profissional</h1>
+            </div>
 
              <div class="android" id="container-job">
                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Tribunal_de_contas_da_uniao_sede.jpg" alt="Imagem TCU" class="Project-Android" id="img-job">
@@ -190,7 +433,7 @@ window.addEventListener('resize', () => {
 
               <aside class="tech">
                <h2>👨🏽‍💻 Tecnologia</h2>
-
+                
                <div class="cards-container">
                 
                 <div class="card">

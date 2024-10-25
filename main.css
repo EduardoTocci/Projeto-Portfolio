@@ -72,16 +72,43 @@ hr{
   }
   
  
- .img-container img{
+ /* .img-container img{
     
     width: 30%;
     height: 50%;
     -webkit-transition: -webkit-transform .5s ease;
     transition: transform .5s ease;
     margin-left: 10px;
- }
+ } */
 
+ .img-container {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.container-dash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  width: 30%;
+  
+}
+
+.container-dash img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+  margin: 10px ;
+}
+
+.container-dash legend {
+  text-align: center;
+  font-size: 1rem;
+  color: #dbdbdb;
+}
 
  
  #pbi:hover{
@@ -184,6 +211,8 @@ hr{
  -webkit-transform: scale(1.1);
  cursor: pointer;
 }
+
+
 
 
 
